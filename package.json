@@ -12,15 +12,15 @@
     "start:dev": "nodemon",
     "start:debug": "nodemon --config nodemon-debug.json",
     "prestart:prod": "rimraf dist && tsc",
-    "start:prod": "node dist/main.js",
+    "start:prod": "node dist/src/main.js",
     "start:hmr": "node dist/server",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-		"webpack": "webpack --config webpack.config.js",
-		"heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
+    "webpack": "webpack --config webpack.config.js",
+    "postinstall": "npm run prestart:prod"
   },
   "dependencies": {
     "@nestjs/common": "^5.1.0",
