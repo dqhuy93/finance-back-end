@@ -1,12 +1,12 @@
 {
   "type": "mysql",
-  "host": "127.0.0.1",
+  "host": "sql12.freemysqlhosting.net",
   "port": 3306,
-  "username": "root",
-  "password": "12345678",
-  "database": "finance_personal",
-  "entities": ["src/**/**.entity{.ts,.js}"],
+  "username": "sql12281569",
+  "password": "nf8MKTTgaG",
+  "database": "sql12281569",
+  "entities": ["./dist/**/**.entity{.ts,.js}"],
 	"synchronize": true,
-	"migrations": ["src/migration/*.ts"],
+	"migrations": ["./dist/migration/*.ts"],
 	"logging": true
 }

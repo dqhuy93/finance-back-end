@@ -1,5 +1,5 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
-import { Wallet } from 'wallet/wallet.entity';
+import { Wallet } from '../wallet/wallet.entity';
 
 @Entity()
 export class Category {

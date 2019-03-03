@@ -16,10 +16,10 @@ export class Wallet {
   @Column({ default: 0 })
   totalMoney: number;
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  @Column({ type: 'timestamp' })
   updateAt?: string;
 
-  @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
+  @Column({ type: 'timestamp' })
   createAt?: string;
 
   @ManyToOne(() => User, user => user.wallets)
